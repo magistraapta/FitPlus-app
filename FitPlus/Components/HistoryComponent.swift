@@ -14,37 +14,38 @@ struct HistoryComponent: View {
     
     var body: some View {
         VStack(alignment: .leading){
+            
             Text("HISTORY")
                 .fontWeight(.medium)
                 .foregroundColor(Color(red: 0.57, green: 0.66, blue: 0.71))
+            
             ZStack(alignment: .leading){
                 Rectangle()
-                    .frame(height: 93)
+                    .frame(height: 110)
                     .cornerRadius(10)
                     .foregroundColor(Color(red: 0.96, green: 0.97, blue: 0.97))
                 
                 HStack(spacing: 16){
-                    Image(systemName: "figure.run")
+                    Image("wo1")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 32)
+                        .frame(width: 80)
                         .foregroundColor(.blue)
+                        .cornerRadius(10)
+                    
                     VStack(alignment: .leading, spacing: 8){
                         Text("\(workoutName)")
                             .font(.title2).bold()
                         Text("\(workoutDuration)")
                     }
-
                 }
                 .padding()
-                                
             }
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
                 .inset(by: 0.5)
                 .stroke(Color(red: 0.57, green: 0.66, blue: 0.71), lineWidth: 1)
             )
-            
         }
         .padding()
     }

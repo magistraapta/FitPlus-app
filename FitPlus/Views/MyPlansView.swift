@@ -38,7 +38,7 @@ struct MyPlansView: View {
                     Spacer()
                 }
             }
-            .navigationTitle("Today")
+            .navigationTitle("Plans")
         }
         
 

@@ -18,6 +18,8 @@
 		3E6E8ACF2A8BA81500879266 /* CalendarWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E8ACE2A8BA81500879266 /* CalendarWeek.swift */; };
 		3E6E8AD12A8BB60C00879266 /* SummaryStatsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E8AD02A8BB60C00879266 /* SummaryStatsComponent.swift */; };
 		3E6E8AD32A8BB91100879266 /* HistoryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E8AD22A8BB91100879266 /* HistoryComponent.swift */; };
+		3E6E8AF72A8C6DFD00879266 /* WorkoutCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E8AF62A8C6DFD00879266 /* WorkoutCategory.swift */; };
+		3EAFDBEC2A8CF20D00013A11 /* WorkoutComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFDBEB2A8CF20D00013A11 /* WorkoutComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		3E6E8ACE2A8BA81500879266 /* CalendarWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWeek.swift; sourceTree = "<group>"; };
 		3E6E8AD02A8BB60C00879266 /* SummaryStatsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryStatsComponent.swift; sourceTree = "<group>"; };
 		3E6E8AD22A8BB91100879266 /* HistoryComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryComponent.swift; sourceTree = "<group>"; };
+		3E6E8AF62A8C6DFD00879266 /* WorkoutCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCategory.swift; sourceTree = "<group>"; };
+		3EAFDBEB2A8CF20D00013A11 /* WorkoutComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				3E6E8ACE2A8BA81500879266 /* CalendarWeek.swift */,
 				3E6E8AD02A8BB60C00879266 /* SummaryStatsComponent.swift */,
 				3E6E8AD22A8BB91100879266 /* HistoryComponent.swift */,
+				3E6E8AF62A8C6DFD00879266 /* WorkoutCategory.swift */,
+				3EAFDBEB2A8CF20D00013A11 /* WorkoutComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 				3E6E8ACF2A8BA81500879266 /* CalendarWeek.swift in Sources */,
 				3E6E8AD32A8BB91100879266 /* HistoryComponent.swift in Sources */,
 				3E6E8AB62A8BA31200879266 /* ContentView.swift in Sources */,
+				3E6E8AF72A8C6DFD00879266 /* WorkoutCategory.swift in Sources */,
+				3EAFDBEC2A8CF20D00013A11 /* WorkoutComponent.swift in Sources */,
 				3E6E8AB42A8BA31200879266 /* FitPlusApp.swift in Sources */,
 				3E6E8ACB2A8BA47A00879266 /* SummaryView.swift in Sources */,
 				3E6E8AC92A8BA47100879266 /* WorkoutView.swift in Sources */,

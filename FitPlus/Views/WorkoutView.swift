@@ -13,8 +13,13 @@ struct WorkoutView: View {
     
     var body: some View {
         NavigationStack {
-            VStack{
-                Text("this is workout")
+            VStack(alignment: .leading){
+                
+                WorkoutCategory()
+                
+                WorkoutComponent()
+                
+                Spacer()
             }
             .searchable(text: $searchValue)
             .padding()
