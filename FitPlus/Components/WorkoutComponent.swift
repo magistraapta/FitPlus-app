@@ -7,23 +7,18 @@
 
 import SwiftUI
 
-struct WorkoutModel: Identifiable{
-    var id = UUID()
-    var name: String
-    var image: String
-}
+
 
 struct WorkoutComponent: View {
     
-    let workoutArray = [
-        WorkoutModel(name: "30 Days workout", image: "wo1"),
-        WorkoutModel(name: "Beginner Workout", image: "wo2")
-    ]
+    @StateObject var workoutVm = WorkoutViewModel()
     
     var body: some View {
+        
         ScrollView{
-            ForEach(workoutArray) { item in
+            ForEach(workoutVm.workoutArray) { item in
                 WorkoutCards(workoutTitle: item.name, workoutImage: item.image)
+                
             }
         }
     }
@@ -50,17 +45,7 @@ extension WorkoutComponent{
                     Text("\(workoutTitle)")
                         .font(.title).bold()
                         .foregroundColor(.white)
-                    Button {
-                        //code
-                    } label: {
-                        Text("Detail")
-                            .foregroundColor(.white)
-                            .bold()
-                            .padding(.horizontal,24)
-                            .padding(.vertical, 8)
-                            .background(.black)
-                            .cornerRadius(20)
-                    }
+                   
 
                 }
                 .padding()

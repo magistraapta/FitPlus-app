@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct MyPlansView: View {
+    
+    @StateObject var calendarVM = CalendarWeekViewModel()
+    
     var body: some View {
         NavigationStack{
             
             VStack(spacing: 16){
+                
+                CalendarComponent()
+                                
                 HStack{
                     Text("Your Plans")
-                        .font(.title2).bold()
+                        .font(.title).bold()
                     Spacer()
                 }
                 .padding(.horizontal)
@@ -38,7 +44,7 @@ struct MyPlansView: View {
                     Spacer()
                 }
             }
-            .navigationTitle("Plans")
+            .navigationTitle("Today")
         }
         
 
