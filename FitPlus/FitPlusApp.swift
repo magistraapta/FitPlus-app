@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct FitPlusApp: App {
+    @StateObject var pageVM = PageViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(pageVM)
         }
     }
 }

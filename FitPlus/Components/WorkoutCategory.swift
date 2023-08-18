@@ -35,11 +35,7 @@ extension WorkoutCategory{
                     .stroke(Color(red: 0.09, green: 0.11, blue: 0.13), lineWidth: 1)
                 )
                 .onTapGesture {
-                    if isSelected == true {
-                        isSelected = false
-                    } else {
-                        isSelected = true
-                    }
+                    isSelected.toggle()
                 }
         }
     }

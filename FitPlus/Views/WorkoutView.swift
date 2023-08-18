@@ -19,10 +19,11 @@ struct WorkoutView: View {
                 
                 WorkoutComponent()
                 
+                
                 Spacer()
             }
+        
             .searchable(text: $searchValue)
-            .padding()
             .navigationTitle("Workout")
         }
     }

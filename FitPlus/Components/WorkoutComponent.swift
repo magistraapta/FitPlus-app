@@ -17,7 +17,15 @@ struct WorkoutComponent: View {
         
         ScrollView{
             ForEach(workoutVm.workoutArray) { item in
-                WorkoutCards(workoutTitle: item.name, workoutImage: item.image)
+                NavigationLink(value: item) {
+                    WorkoutCards(workoutTitle: item.name, workoutImage: item.image)
+                }
+                .navigationDestination(for: WorkoutModel.self) { item in
+                    WorkoutDetailView(workoutTitle: item.name, workoutImage: item.image, workoutDescription: item.description, workoutDuratuion: item.duration)
+                        
+                }
+                .buttonStyle(.plain)
+                
                 
             }
         }
@@ -40,6 +48,7 @@ extension WorkoutComponent{
                             .opacity(0.2)
                             .cornerRadius(15)
                     }
+                   
                 
                 VStack(alignment: .leading){
                     Text("\(workoutTitle)")

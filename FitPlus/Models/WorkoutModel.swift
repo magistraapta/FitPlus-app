@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct WorkoutModel: Identifiable {
+struct WorkoutModel: Identifiable, Hashable {
     var id = UUID()
     var name: String
-    var detail: String
+    var description: String
     var image: String
     var duration: Int
 }
