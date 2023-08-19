@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @StateObject var pageVM = PageViewModel()
+
     @EnvironmentObject var tabIndex: PageViewModel
     
     var body: some View {
