@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FinishWorkoutView: View {
-    @EnvironmentObject var pageVM : PageViewModel
+    @EnvironmentObject var pageVM: PageViewModel
     var body: some View {
         VStack(alignment: .leading, spacing: 32){
             Text("You did a great job today!")
