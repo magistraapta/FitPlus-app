@@ -27,6 +27,8 @@
 		3EAFDBFD2A8F1BCF00013A11 /* PageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFDBFC2A8F1BCF00013A11 /* PageViewModel.swift */; };
 		3EF420202A90E216006C1535 /* WorkoutMovementCompoent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4201F2A90E216006C1535 /* WorkoutMovementCompoent.swift */; };
 		3EF420222A90E2EA006C1535 /* WorkoutMovementViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF420212A90E2EA006C1535 /* WorkoutMovementViews.swift */; };
+		3EF420242A91FB7C006C1535 /* StartWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF420232A91FB7C006C1535 /* StartWorkoutView.swift */; };
+		3EF420262A91FF29006C1535 /* FinishWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF420252A91FF29006C1535 /* FinishWorkoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		3EAFDBFC2A8F1BCF00013A11 /* PageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewModel.swift; sourceTree = "<group>"; };
 		3EF4201F2A90E216006C1535 /* WorkoutMovementCompoent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutMovementCompoent.swift; sourceTree = "<group>"; };
 		3EF420212A90E2EA006C1535 /* WorkoutMovementViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutMovementViews.swift; sourceTree = "<group>"; };
+		3EF420232A91FB7C006C1535 /* StartWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartWorkoutView.swift; sourceTree = "<group>"; };
+		3EF420252A91FF29006C1535 /* FinishWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishWorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				3EAFDBF62A8E602B00013A11 /* WorkoutDetailView.swift */,
 				3EAFDBFA2A8F068800013A11 /* ScheduleView.swift */,
 				3EF420212A90E2EA006C1535 /* WorkoutMovementViews.swift */,
+				3EF420232A91FB7C006C1535 /* StartWorkoutView.swift */,
+				3EF420252A91FF29006C1535 /* FinishWorkoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,12 +225,14 @@
 			files = (
 				3EAFDBEF2A8E14D800013A11 /* CalendarWeekViewModel.swift in Sources */,
 				3EAFDBF72A8E602B00013A11 /* WorkoutDetailView.swift in Sources */,
+				3EF420242A91FB7C006C1535 /* StartWorkoutView.swift in Sources */,
 				3EAFDBF52A8E237700013A11 /* WorkoutViewModel.swift in Sources */,
 				3EAFDBF32A8E221300013A11 /* WorkoutModel.swift in Sources */,
 				3E6E8AD32A8BB91100879266 /* HistoryComponent.swift in Sources */,
 				3EAFDBFB2A8F068800013A11 /* ScheduleView.swift in Sources */,
 				3EF420202A90E216006C1535 /* WorkoutMovementCompoent.swift in Sources */,
 				3E6E8AB62A8BA31200879266 /* ContentView.swift in Sources */,
+				3EF420262A91FF29006C1535 /* FinishWorkoutView.swift in Sources */,
 				3EAFDBFD2A8F1BCF00013A11 /* PageViewModel.swift in Sources */,
 				3E6E8AF72A8C6DFD00879266 /* WorkoutCategory.swift in Sources */,
 				3EAFDBEC2A8CF20D00013A11 /* WorkoutComponent.swift in Sources */,

@@ -19,8 +19,8 @@ struct WorkoutMovementViews: View {
             }
             .listStyle(.plain)
             Spacer()
-            Button {
-                //code
+            NavigationLink {
+                StartWorkoutView()
             } label: {
                 Text("Start")
                     .foregroundColor(.white)
