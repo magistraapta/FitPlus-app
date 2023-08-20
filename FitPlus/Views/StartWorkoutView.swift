@@ -15,28 +15,7 @@ struct StartWorkoutView: View {
                 .scaledToFit()
                 .frame(width: 361)
             Spacer()
-            ZStack{
-                Circle()
-                    .stroke(Color.green, lineWidth: 20)
-                VStack(spacing: 24){
-                    Text("20:00:11")
-                        .font(Font.custom("SF Pro", size: 48))
-                        .bold()
-                    HStack(spacing: 32){
-                        WorkoutButtonIcon(iconName: "chevron.backward.square.fill", iconSize: 40)
-                        NavigationLink {
-                            FinishWorkoutView()
-                        } label: {
-                            WorkoutButtonIcon(iconName: "pause.circle.fill", iconSize: 60)
-                        }
-
-                        
-                        WorkoutButtonIcon(iconName: "chevron.forward.square.fill", iconSize: 40)
-                    }
-                }
-                
-            }
-            .frame(width: 350)
+            CountdownView()
             Spacer()
         }
         .navigationBarBackButtonHidden(true)

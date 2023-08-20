@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
     @EnvironmentObject var tabIndex: PageViewModel
     
     var body: some View {
@@ -33,6 +33,7 @@ struct ContentView: View {
                     Image(systemName: "chart.bar.fill")
                     Text("Summary")
                 }
+            
         }
     }
 }

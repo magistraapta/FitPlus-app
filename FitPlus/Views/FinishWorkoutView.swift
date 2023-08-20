@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct FinishWorkoutView: View {
+    @Environment(\.isPresented) var isPresented
+
+    @Environment(\.dismiss) var dismiss
     @EnvironmentObject var pageVM: PageViewModel
     var body: some View {
         VStack(alignment: .leading, spacing: 32){
@@ -26,15 +29,18 @@ struct FinishWorkoutView: View {
             }
             Spacer()
             
-            Button {
-                pageVM.selectedIndex = 0
-            } label: {
-                Text("Done")
-                    .frame(width: 361, height: 40)
-                    .foregroundColor(.white)
-                    .background(.black)
-                    .cornerRadius(10)
+            if isPresented{
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Done")
+                        .frame(width: 361, height: 40)
+                        .foregroundColor(.white)
+                        .background(.black)
+                        .cornerRadius(10)
+                }
             }
+            
 
         }
         .navigationBarBackButtonHidden(true)
