@@ -21,6 +21,18 @@ struct Clock: View {
             Text(counterToMinutes())
                 .font(.custom("SF Pro", size: 60))
                 .fontWeight(.black)
+            HStack(spacing: 32){
+                WorkoutButtonIcon(iconName: "chevron.backward.square.fill", iconSize: 40)
+                NavigationLink {
+                    FinishWorkoutView()
+                } label: {
+                    WorkoutButtonIcon(iconName: "pause.circle.fill", iconSize: 60)
+                }
+
+                
+                WorkoutButtonIcon(iconName: "chevron.forward.square.fill", iconSize: 40)
+            }
+
         }
     }
     
@@ -32,6 +44,19 @@ struct Clock: View {
         return "\(minutes):\(seconds < 10 ? "0" : "")\(seconds)"
     }
     
+}
+
+extension Clock{
+    struct WorkoutButtonIcon: View{
+        @State var iconName: String
+        @State var iconSize: CGFloat
+        var body: some View{
+            Image(systemName: "\(iconName)")
+                .resizable()
+                .scaledToFit()
+                .frame(width: iconSize)
+        }
+    }
 }
 
 struct ProgressTrack: View {
@@ -68,6 +93,7 @@ struct ProgressBar: View {
                     .easeInOut(duration: 0.2)
                 )
         )
+            .rotationEffect(.degrees(270))
     }
     
     func completed() -> Bool {
