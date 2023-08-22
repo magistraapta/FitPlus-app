@@ -31,8 +31,16 @@ class WorkoutViewModel: ObservableObject{
     func getData(){
         let wo1 = WorkoutModel(name: "Beginner Workout", description: "this beginner workout is perfect for start your workout as a beginner", image: "wo1", duration: 15)
         let wo2 = WorkoutModel(name: "30 Days Workout", description: "try workout with dicipline with 30 days workout program", image: "wo2", duration: 15)
+        let wo3 = WorkoutModel(name: "30 Days Workout", description: "try workout with dicipline with 30 days workout program", image: "wo3", duration: 15)
+        let wo4 = WorkoutModel(name: "30 Days Workout", description: "try workout with dicipline with 30 days workout program", image: "wo4", duration: 15)
+        let wo5 = WorkoutModel(name: "30 Days Workout", description: "try workout with dicipline with 30 days workout program", image: "wo5", duration: 15)
+        let wo6 = WorkoutModel(name: "30 Days Workout", description: "try workout with dicipline with 30 days workout program", image: "wo6", duration: 15)
         
         workoutArray.append(wo1)
         workoutArray.append(wo2)
+        workoutArray.append(wo3)
+        workoutArray.append(wo4)
+        workoutArray.append(wo5)
+        workoutArray.append(wo6)
     }
 }
