@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct WorkoutMovementViews: View {
-    
+    @StateObject var movementVM = WorkoutViewModel()
     var body: some View {
-        VStack{
+        ZStack(alignment: .bottom){
             Spacer()
             List{
-                ForEach(1...7, id: \.self){item in
-                    WorkoutMovementCompoent()
+                ForEach(movementVM.movements){item in
+                    WorkoutMovementCompoent(movementImage: item.image, movementTitle: item.name, movementReps: item.reps)
                 }
             }
             .listStyle(.plain)
@@ -29,6 +29,7 @@ struct WorkoutMovementViews: View {
                     .cornerRadius(10)
             }
         }
+
         .navigationTitle("Beginner Workout")
         .navigationBarTitleDisplayMode(.inline)
     }

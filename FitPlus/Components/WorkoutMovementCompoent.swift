@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct WorkoutMovementCompoent: View {
+    @State var movementImage: String
+    @State var movementTitle: String
+    @State var movementReps: String
     var body: some View {
-        HStack{
-            Image("deadlift")
+        HStack(spacing: 12){
+            Image("\(movementImage)")
                 .resizable()
-                .scaledToFit()
-                .frame(width: 100)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 150, height: 100)
+                .clipped()
             VStack(alignment: .leading, spacing: 8){
-                Text("Deadlift")
+                Text("\(movementTitle)")
                     .bold()
-                Text("10 x 2 reps")
+                Text("\(movementReps)")
             }
             Spacer()
         }
@@ -26,6 +30,6 @@ struct WorkoutMovementCompoent: View {
 
 struct WorkoutMovementCompoent_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutMovementCompoent()
+        WorkoutMovementCompoent(movementImage: "movement2", movementTitle: "Push up", movementReps: "10 x 2")
     }
 }

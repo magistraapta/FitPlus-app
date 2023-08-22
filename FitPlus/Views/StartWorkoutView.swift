@@ -10,10 +10,11 @@ import SwiftUI
 struct StartWorkoutView: View {
     var body: some View {
         VStack{
-            Image("deadlift")
+            Image("movement6")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 361)
+                .cornerRadius(10)
             Spacer()
             CountdownView()
             Spacer()

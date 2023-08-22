@@ -9,9 +9,23 @@ import Foundation
 
 class WorkoutViewModel: ObservableObject{
     @Published var workoutArray: [WorkoutModel] = []
+    @Published var movements: [MovementModel] = []
     
     init(){
         getData()
+        getMovement()
+    }
+    
+    func getMovement(){
+        let mov1 = MovementModel(name: "Push up", image: "movement1", reps: "10 x 2")
+        let mov2 = MovementModel(name: "Sit up", image: "movement2", reps: "10 x 2")
+        let mov3 = MovementModel(name: "Plank", image: "movement3", reps: "1 min")
+        let mov4 = MovementModel(name: "Bench Press", image: "movement4", reps: "10 x 2")
+        
+        movements.append(mov1)
+        movements.append(mov2)
+        movements.append(mov3)
+        movements.append(mov4)
     }
     
     func getData(){
