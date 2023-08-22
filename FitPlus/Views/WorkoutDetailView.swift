@@ -37,7 +37,6 @@ struct WorkoutDetailView: View {
                     
                 }
                 
-                
                 Spacer()
                 
                 Button {
@@ -58,10 +57,10 @@ struct WorkoutDetailView: View {
                         .presentationDetents([.medium])
                 }
                 
-                Spacer()
+//                Spacer()
             }
         }
-        .ignoresSafeArea()
+        .ignoresSafeArea(edges: .top)
     }
 }
 
