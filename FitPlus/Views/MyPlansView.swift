@@ -64,7 +64,6 @@ extension MyPlansView{
         var body: some View{
             VStack{
                 Button{
-                    print("Cek")
                     pageVM.isMyPlanView = true
                 }label: {
                     ZStack(alignment: .bottomLeading){

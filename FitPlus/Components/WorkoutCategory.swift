@@ -12,8 +12,8 @@ struct WorkoutCategory: View {
     var body: some View {
         HStack{
             CategoryItem(isSelected: true, title: "For you")
-            CategoryItem(isSelected: false, title: "30 days")
-            CategoryItem(isSelected: false, title: "7 Days")
+            CategoryItem(isSelected: false, title: "Beginner")
+            CategoryItem(isSelected: false, title: "Expert")
         }
     }
 }

@@ -40,22 +40,18 @@ extension WorkoutComponent{
             ZStack(alignment: .bottomLeading){
                 Image("\(workoutImage)")
                     .resizable()
-                    .scaledToFit()
-                    .frame(width: 361)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 361, height: 200)
                     .cornerRadius(15)
                     .overlay{
                         Rectangle()
                             .opacity(0.2)
                             .cornerRadius(15)
                     }
-                   
-                
                 VStack(alignment: .leading){
                     Text("\(workoutTitle)")
                         .font(.title).bold()
                         .foregroundColor(.white)
-                   
-
                 }
                 .padding()
                 
@@ -66,6 +62,6 @@ extension WorkoutComponent{
 
 struct WorkoutComponent_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutComponent()
+        WorkoutComponent().environmentObject(PageViewModel())
     }
 }

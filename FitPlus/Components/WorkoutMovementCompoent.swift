@@ -16,7 +16,7 @@ struct WorkoutMovementCompoent: View {
             Image("\(movementImage)")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 150, height: 100)
+                .frame(width: 100, height: 80)
                 .clipped()
             VStack(alignment: .leading, spacing: 8){
                 Text("\(movementTitle)")
