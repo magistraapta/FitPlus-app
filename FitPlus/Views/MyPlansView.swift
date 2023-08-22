@@ -17,7 +17,7 @@ struct MyPlansView: View {
     ]
     
     var body: some View {
-        NavigationStack{
+        NavigationView{
             
             VStack(spacing: 16){
                 
@@ -52,18 +52,22 @@ struct MyPlansView: View {
             .navigationTitle("Today")
         }
         
+        
+        
 
     }
 }
 
 extension MyPlansView{
     struct PlansComponent: View {
-        
+        @EnvironmentObject var pageVM : PageViewModel
         var body: some View{
-            NavigationStack{
-                NavigationLink {
-                    WorkoutMovementViews()
-                } label: {
+//            NavigationStack{
+            VStack{
+                Button{
+                    print("Cek")
+                    pageVM.isMyPlanView = true
+                }label: {
                     ZStack(alignment: .bottomLeading){
                         Image("wo1")
                             .resizable()
@@ -80,7 +84,33 @@ extension MyPlansView{
                             .padding()
                     }
                 }
+                
+                NavigationLink(destination: WorkoutMovementViews(), isActive: $pageVM.isMyPlanView){
+                    EmptyView()
+                }
             }
+                
+                
+//                NavigationLink {
+//                    WorkoutMovementViews()
+//                } label: {
+//                    ZStack(alignment: .bottomLeading){
+//                        Image("wo1")
+//                            .resizable()
+//                            .clipShape(RoundedRectangle(cornerRadius: 10))
+//                            .frame(width: 361,height: 150)
+//                            .overlay{
+//                                Rectangle()
+//                                    .opacity(0.2)
+//                            }
+//                        Text("Beginner workout")
+//                            .font(.title2)
+//                            .foregroundColor(.white)
+//                            .bold()
+//                            .padding()
+//                    }
+//                }
+//            }
             .buttonStyle(.plain)
         }
     }

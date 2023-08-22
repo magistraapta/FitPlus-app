@@ -18,7 +18,7 @@ struct StartWorkoutView: View {
             CountdownView()
             Spacer()
         }
-        .toolbar(.hidden, for: .tabBar)
+        
         .navigationBarBackButtonHidden(true)
     }
 }

@@ -9,4 +9,5 @@ import Foundation
 
 class PageViewModel: ObservableObject {
     @Published var selectedIndex = 0
+    @Published var isMyPlanView = false
 }

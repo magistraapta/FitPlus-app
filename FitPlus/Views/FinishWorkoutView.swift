@@ -29,9 +29,13 @@ struct FinishWorkoutView: View {
             }
             Spacer()
             
-            if isPresented{
+//            if isPresented{
                 Button {
-                    dismiss()
+                    print(pageVM.isMyPlanView)
+                    pageVM.isMyPlanView = false
+                    print(pageVM.isMyPlanView)
+                    pageVM.objectWillChange.send()
+//                    dismiss()
                 } label: {
                     Text("Done")
                         .frame(width: 361, height: 40)
@@ -39,7 +43,7 @@ struct FinishWorkoutView: View {
                         .background(.black)
                         .cornerRadius(10)
                 }
-            }
+//            }
             
 
         }
