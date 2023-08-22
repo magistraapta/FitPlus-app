@@ -71,12 +71,14 @@ extension MyPlansView{
                     ZStack(alignment: .bottomLeading){
                         Image("wo1")
                             .resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            .aspectRatio(contentMode: .fill)
                             .frame(width: 361,height: 150)
                             .overlay{
                                 Rectangle()
                                     .opacity(0.2)
                             }
+                            .clipped()
+                            .cornerRadius(10)
                         Text("Beginner workout")
                             .font(.title2)
                             .foregroundColor(.white)
