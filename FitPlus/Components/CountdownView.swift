@@ -16,6 +16,7 @@ struct Clock: View {
     var counter: Int
     var countTo: Int
     
+    @State var isPaused: Bool = false
     var body: some View {
         VStack {
             Text(counterToMinutes())
@@ -23,11 +24,37 @@ struct Clock: View {
                 .fontWeight(.black)
             HStack(spacing: 32){
                 WorkoutButtonIcon(iconName: "chevron.backward.square.fill", iconSize: 40)
-                NavigationLink {
-                    FinishWorkoutView()
-                } label: {
-                    WorkoutButtonIcon(iconName: "pause.circle.fill", iconSize: 60)
+                
+                VStack(spacing: 24){
+                    Button {
+                        isPaused.toggle()
+                    } label: {
+                        Image(systemName: isPaused ? "play.circle.fill" : "pause.circle.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 60)
+                            
+                    }
+                    
+                    
+                    if isPaused{
+                        NavigationLink {
+                            FinishWorkoutView()
+                        } label: {
+                            Image(systemName: "stop.circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60)
+                                .foregroundColor(.red)
+                        }
+                    } else {
+                        EmptyView()
+                    }
                 }
+                
+
+                
+             
 
                 
                 WorkoutButtonIcon(iconName: "chevron.forward.square.fill", iconSize: 40)

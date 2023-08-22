@@ -62,7 +62,6 @@ extension MyPlansView{
     struct PlansComponent: View {
         @EnvironmentObject var pageVM : PageViewModel
         var body: some View{
-//            NavigationStack{
             VStack{
                 Button{
                     print("Cek")
@@ -91,28 +90,6 @@ extension MyPlansView{
                     EmptyView()
                 }
             }
-                
-                
-//                NavigationLink {
-//                    WorkoutMovementViews()
-//                } label: {
-//                    ZStack(alignment: .bottomLeading){
-//                        Image("wo1")
-//                            .resizable()
-//                            .clipShape(RoundedRectangle(cornerRadius: 10))
-//                            .frame(width: 361,height: 150)
-//                            .overlay{
-//                                Rectangle()
-//                                    .opacity(0.2)
-//                            }
-//                        Text("Beginner workout")
-//                            .font(.title2)
-//                            .foregroundColor(.white)
-//                            .bold()
-//                            .padding()
-//                    }
-//                }
-//            }
             .buttonStyle(.plain)
         }
     }
