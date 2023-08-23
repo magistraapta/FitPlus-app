@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct FinishWorkoutView: View {
-    @Environment(\.isPresented) var isPresented
-
-    @Environment(\.dismiss) var dismiss
     @EnvironmentObject var pageVM: PageViewModel
     var body: some View {
         VStack(alignment: .leading, spacing: 32){
@@ -35,6 +32,7 @@ struct FinishWorkoutView: View {
                     pageVM.isMyPlanView = false
                     print(pageVM.isMyPlanView)
                     pageVM.objectWillChange.send()
+                    pageVM.isWorkoutDone = true
 //                    dismiss()
                 } label: {
                     Text("Done")

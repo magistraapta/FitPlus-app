@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3E1B6F1B2A94DE84007F4525 /* MovementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1B6F1A2A94DE84007F4525 /* MovementModel.swift */; };
+		3E4099172A9644600092EB5E /* WorkoutDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4099162A9644600092EB5E /* WorkoutDay.swift */; };
+		3E4099192A9649510092EB5E /* WorkoutDayMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4099182A9649510092EB5E /* WorkoutDayMovement.swift */; };
 		3E6E8AB42A8BA31200879266 /* FitPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E8AB32A8BA31200879266 /* FitPlusApp.swift */; };
 		3E6E8AB62A8BA31200879266 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E8AB52A8BA31200879266 /* ContentView.swift */; };
 		3E6E8AB82A8BA31300879266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E8AB72A8BA31300879266 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		3E1B6F1A2A94DE84007F4525 /* MovementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementModel.swift; sourceTree = "<group>"; };
+		3E4099162A9644600092EB5E /* WorkoutDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDay.swift; sourceTree = "<group>"; };
+		3E4099182A9649510092EB5E /* WorkoutDayMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDayMovement.swift; sourceTree = "<group>"; };
 		3E6E8AB02A8BA31200879266 /* FitPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6E8AB32A8BA31200879266 /* FitPlusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitPlusApp.swift; sourceTree = "<group>"; };
 		3E6E8AB52A8BA31200879266 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				3EF4201F2A90E216006C1535 /* WorkoutMovementCompoent.swift */,
 				3EF420452A925AD0006C1535 /* TimerComponent.swift */,
 				3EF420472A925B51006C1535 /* CountdownView.swift */,
+				3E4099162A9644600092EB5E /* WorkoutDay.swift */,
+				3E4099182A9649510092EB5E /* WorkoutDayMovement.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -248,10 +254,12 @@
 				3E6E8AF72A8C6DFD00879266 /* WorkoutCategory.swift in Sources */,
 				3EAFDBEC2A8CF20D00013A11 /* WorkoutComponent.swift in Sources */,
 				3EF420222A90E2EA006C1535 /* WorkoutMovementViews.swift in Sources */,
+				3E4099192A9649510092EB5E /* WorkoutDayMovement.swift in Sources */,
 				3E6E8AB42A8BA31200879266 /* FitPlusApp.swift in Sources */,
 				3E6E8ACB2A8BA47A00879266 /* SummaryView.swift in Sources */,
 				3E1B6F1B2A94DE84007F4525 /* MovementModel.swift in Sources */,
 				3E6E8AC92A8BA47100879266 /* WorkoutView.swift in Sources */,
+				3E4099172A9644600092EB5E /* WorkoutDay.swift in Sources */,
 				3E6E8AD12A8BB60C00879266 /* SummaryStatsComponent.swift in Sources */,
 				3E6E8AC62A8BA45F00879266 /* MyPlansView.swift in Sources */,
 				3EAFDBF12A8E215200013A11 /* CalendarComponent.swift in Sources */,

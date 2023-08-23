@@ -36,14 +36,21 @@ struct WorkoutDetailView: View {
             }
             
             Spacer()
-            
-            List{
-                ForEach(workoutVM.movements){ item in
-                    WorkoutMovementCompoent(movementImage: item.image, movementTitle: item.name, movementReps: item.reps)
-                }
+            WorkoutDay(day: "Day 1")
                 .padding()
-            }
-            .listStyle(.plain)
+//            VStack(alignment: .leading){
+//                Text("Day 1")
+//                    .bold()
+//                    .padding()
+//                List{
+//                    ForEach(workoutVM.movements){ item in
+//                        WorkoutMovementCompoent(movementImage: item.image, movementTitle: item.name, movementReps: item.reps)
+//                    }
+//                    .padding()
+//                }
+//                .listStyle(.plain)
+//            }
+            
             Button {
                 openSheet.toggle()
             } label: {

@@ -85,7 +85,7 @@ extension MyPlansView{
                     }
                 }
                 
-                NavigationLink(destination: WorkoutMovementViews(), isActive: $pageVM.isMyPlanView){
+                NavigationLink(destination: WorkoutDayMovement(), isActive: $pageVM.isMyPlanView){
                     EmptyView()
                 }
             }

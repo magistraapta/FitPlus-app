@@ -10,7 +10,7 @@ import SwiftUI
 struct CalendarComponent: View {
     
     @StateObject var calendarVM = CalendarWeekViewModel()
-    
+    @EnvironmentObject var controller: PageViewModel
     var body: some View {
         VStack(alignment: .leading, spacing: 24){
             Text(Date().formatted(date: .abbreviated, time: .omitted))
@@ -23,8 +23,9 @@ struct CalendarComponent: View {
                             .bold()
                         Text(calendarVM.extractDate(date: day, format: "EEE"))
                         
+                        
                         Circle()
-                            .fill(.green)
+                            .fill(controller.isWorkoutDone ? .green : .red)
                             .frame(width: 8)
                             .opacity(calendarVM.isToday(date: day) ? 1 : 0)
                     }
@@ -46,6 +47,6 @@ struct CalendarComponent: View {
 
 struct CalendarComponent_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarComponent()
+        CalendarComponent().environmentObject(PageViewModel())
     }
 }
